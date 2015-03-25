@@ -1,0 +1,71 @@
+\documentclass[slidestop,compress,mathserif]{beamer} %\usepackage[bars]{beamerthemetree} % Beamer theme v 2.2 \usetheme{Antibes} % Beamer theme v 3.0 \usecolortheme{lily} % Beamer color theme
+\usetheme{Ilmenau}
+\usepackage{amsmath} 
+\usepackage{amssymb} 
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{listings}
+
+
+\usepackage[utf8]{inputenc}
+
+% Default fixed font does not support bold face
+\DeclareFixedFont{\ttb}{T1}{txtt}{bx}{n}{12} % for bold
+\DeclareFixedFont{\ttm}{T1}{txtt}{m}{n}{12}  % for normal
+
+% Custom colors
+\usepackage{color}
+
+
+\begin{document}
+%%-------------------------------------------------
+    \title{Bayeian approach to single-cell differential expression analysis}
+    \author{Boqiang Hu}
+    \institute{ Bio Dynamic Imaging Center (BIOPIC), Peking University }
+    \date{\today}
+    \begin{frame}
+    	 \titlepage
+    \end{frame}
+%%-------------------------------------------------
+
+ 
+\section{Introduction}
+
+\section{1.Modeling single-cell data} 
+
+
+\section{2. What does the model mean?}
+\subsection{1.let's back up to the code of individual model...  }
+
+
+
+\section{3.Application of the Model} 
+
+\subsection{1. Figure 2C Comparison of different softwares to detect DEG using bulk results} 
+\begin{frame}
+
+	\frametitle{SCDE method shows higher sensitivity then do the other common methods}
+	\begin{figure}[htbp]
+	\includegraphics[height=4.0cm]{/Users/hubq/Documents/tmp_paper/Figures/Figure2C.pdf}
+	\end{figure} 
+\end{frame}
+\subsection{1S. Figure S4 Comparison of different softwares to detect DEG using bulk results, MEF high and mES high} 
+\begin{frame}
+
+	\frametitle{SCDE method shows higher sensitivity especially in low RNA content}
+	
+	\begin{table}
+	\centering	
+	\begin{tabular}{ll}     
+		a mES higher		& MEF higher 	\\
+\includegraphics[height=2.5cm ]{/Users/hubq/Documents/tmp_paper/Figures/FigureS4_mES.pdf}	&  
+\includegraphics[height=2.5cm]{/Users/hubq/Documents/tmp_paper/Figures/FigureS4_MEF.pdf}	\\	\end{tabular}	
+	\end{table}	
+	Notice mESC cells is of low RNA content and fewer detected reads.	
+	
+\end{frame}
+
+
+
+
+\end{document}
